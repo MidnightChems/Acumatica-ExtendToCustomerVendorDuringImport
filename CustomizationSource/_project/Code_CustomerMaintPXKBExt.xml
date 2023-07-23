@@ -1,5 +1,5 @@
-﻿<Graph ClassName="CustomerMaintPXKBExt" Source="#CDATA" IsNew="True" FileType="NewFile">
-    <CDATA name="Source"><![CDATA[using System;
+<Graph ClassName="CustomerMaintPXKBExt" Source="#CDATA" IsNew="True" FileType="NewFile">
+        <CDATA name="Source"><![CDATA[using System;
 using System.Collections;
 using PX.Data;
 using PX.Objects.AR;
@@ -18,8 +18,8 @@ namespace PXExtendToCustomerAndVendor
         {
             try
             {
-                if (Base.extendToVendor.GetEnabled())
-                    Base.extendToVendor.Press();
+                if (Base.Actions["ExtendToVendor"].GetEnabled())
+                Base.Actions["ExtendToVendor"].Press();
             }
             catch (Exception ex)
             {
@@ -35,4 +35,4 @@ namespace PXExtendToCustomerAndVendor
         }
     }
 }]]></CDATA>
-</Graph>
+    </Graph>
